@@ -6,7 +6,7 @@
     ![](https://cdn.jsdelivr.net/gh/zweix123/win-config@master/source/cmd.png)
 
 + 使用oh-my-posh的官方主题ys：  
-    ![](https://cdn.jsdelivr.net/gh/zweix123/win-config@master/source/ys.pmg)
+    ![](https://cdn.jsdelivr.net/gh/zweix123/win-config@master/source/ys.png)
 
 + 我魔改的主题：
     ![](https://cdn.jsdelivr.net/gh/zweix123/win-config@master/source/mine.png)
