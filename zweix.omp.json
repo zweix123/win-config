@@ -39,7 +39,7 @@
             "fetch_version": true
           },
           "style": "plain",
-          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ .Full }}{{ end }})",
+          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}-{{ .Full }}{{ end }})",
           "type": "python"
         },
       //   {
