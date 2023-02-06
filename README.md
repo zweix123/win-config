@@ -3,13 +3,13 @@
 ## 效果
 
 + 原本的终端：  
-    ![](https://cdn.jsdelivr.net/gh/zweix123/win-config@master/source/cmd.png)
+    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/source/cmd.png)
 
 + 使用oh-my-posh的官方主题ys：  
-    ![](https://cdn.jsdelivr.net/gh/zweix123/win-config@master/source/ys.png)
+    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/source/ys.png)
 
 + 我魔改的主题：
-    ![](https://cdn.jsdelivr.net/gh/zweix123/win-config@master/source/mine.png)
+    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/source/mine.png)
 
 ## 使用
 

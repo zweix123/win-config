@@ -12,6 +12,15 @@
           "type": "root"
         },
         {
+          "foreground": "green",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ end }})",
+          "type": "python"
+        },
+        {
           "style": "plain",
           "template": "<cyan>{{ .UserName }}</><darkGray>@</><green>{{ .HostName }}</>",
           "type": "session"
@@ -27,27 +36,12 @@
         },
         {
           "style": "plain",
-          "template": " <white>git:(</><cyan>{{ .HEAD }}</>{{ if .Working.Changed }}<red>x</>{{ end }}<white>)</>",
+          "template": ";<lightBlue>git:(</><lightRed>{{ .HEAD }}</>{{ if .Working.Changed }}<lightYellow>x</>{{ end }}<lightBlue>)</>",
           "type": "git",
           "properties": {
             "fetch_status": true
           }
         },
-        {
-          "foreground": "green",
-          "properties": {
-            "fetch_version": true
-          },
-          "style": "plain",
-          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}-{{ .Full }}{{ end }})",
-          "type": "python"
-        },
-      //   {
-      //     "foreground": "darkGray",
-      //     "style": "plain",
-      //     "template": "[{{ .CurrentDate | date .Format }}]",
-      //     "type": "time"
-      //   },
         {
           "foreground": "red",
           "style": "plain",
