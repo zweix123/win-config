@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      // "newline": true,
+      "segments": [
+        {
+          "foreground": "red",
+          "style": "plain",
+          "template": "%",
+          "type": "root"
+        },
+        {
+          "style": "plain",
+          "template": "<cyan>{{ .UserName }}</><darkGray>@</><green>{{ .HostName }}</>",
+          "type": "session"
+        },
+        {
+          "foreground": "lightYellow",
+          "properties": {
+            "style": "full"
+          },
+          "style": "plain",
+          "template": "<darkGray>:</>{{ .Path }}",
+          "type": "path"
+        },
+        {
+          "style": "plain",
+          "template": " <white>git:(</><cyan>{{ .HEAD }}</>{{ if .Working.Changed }}<red>x</>{{ end }}<white>)</>",
+          "type": "git",
+          "properties": {
+            "fetch_status": true
+          }
+        },
+        {
+          "foreground": "green",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ .Full }}{{ end }})",
+          "type": "python"
+        },
+      //   {
+      //     "foreground": "darkGray",
+      //     "style": "plain",
+      //     "template": "[{{ .CurrentDate | date .Format }}]",
+      //     "type": "time"
+      //   },
+        {
+          "foreground": "red",
+          "style": "plain",
+          "template": "[{{ if gt .Code 0 }}{{ .Code }}{{ end }}]",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    },
+
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "lightGreen",
+          "foreground_templates": ["{{ if gt .Code 0}}lightRed{{ end }}"],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": ">",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 3
+}
