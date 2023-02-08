@@ -1,3 +1,5 @@
++ 教程：[zweix的win配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
+
 简约效率风，魔改自官方主题`ys`
 
 ## 效果
