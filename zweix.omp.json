@@ -36,7 +36,7 @@
         },
         {
           "style": "plain",
-          "template": ";<lightBlue>git:(</><lightRed>{{ .HEAD }}</>{{ if .Working.Changed }}<lightYellow>x</>{{ end }}<lightBlue>)</>",
+          "template": " <lightBlue>git:(</><lightRed>{{ .HEAD }}</>{{ if .Working.Changed }}<lightYellow>x</>{{ end }}<lightBlue>)</>",
           "type": "git",
           "properties": {
             "fetch_status": true
