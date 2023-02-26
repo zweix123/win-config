@@ -1,25 +1,38 @@
-+ 教程：[zweix的win配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
++ 该配置配套教程：[zweix的win机器开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
++ 提供的配置：
+    1. oh-my-posh的主题：主打简约效率风魔改自官方主题`ys`
+    2. PowerShell7的配置：主要是用来引入主题
+    3. Windows Terminal的配置：
+        + 打开位置、打开大小、打开模式、模式切换快捷键可按个人喜好修改
+        + 字体种类、字体大小、One Dark风配色方案
 
-简约效率风，魔改自官方主题`ys`
+    4. 改键脚本：将`Caps`键改为方向键右键来加速使用oh-my-posh的补全
 
 ## 效果
 
 + 原本的终端：  
-    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/source/cmd.png)
+    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/cmd.png)
 
-+ 使用oh-my-posh的官方主题ys的终端：  
-    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/source/ys.png)
-
-+ 我魔改主题后的终端：
-    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/source/mine.png)
++ 魔改后的终端：
+    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine.png)
 
 ## 使用
 
-+ 下载项目到本地
-1. 调用脚本`backup.ps1`备份本机配置（对powershell7的配置文件备份到同目录下）
-2. 调用脚本`install.ps1`使用我的配置覆盖本地配置（主题使用自定义，主要是覆盖powershell7的配置文件）
-+ 如果您像在其基础上开发您的主题和配置，可以fork本项目，在本地修改调试后好通过脚本`collect.ps1`收集本地相关配置
+0. 下载：
+    ```bash
+    git clone https://github.com/zweix123/posh-config.git
+    cd posh-config
+    ```
++ 备份：可能出现报错，不过没关系
+    ```powershell
+    .\backup.ps1
+    ```
 
-## Log
-
-+ 2023.02.15，添加脚本`ChangeKey.reg`，用于将`Caps`键改为`Right`键（用于posh历史自动补全，不然方向键右键太远了），双击使用。
+1. 替换原有配置：
+    ```powershell
+    .\install.ps1
+    ```
++ 收集：如果您Fork本项目做出自己的定制，这个脚本可以方便您在本地调试后将配置全部收集会本项目目录下
+    ```powershell
+    .\collect.ps1
+    ```

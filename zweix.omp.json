@@ -3,7 +3,6 @@
   "blocks": [
     {
       "alignment": "left",
-      // "newline": true,
       "segments": [
         {
           "foreground": "red",
@@ -51,14 +50,15 @@
       ],
       "type": "prompt"
     },
-
     {
       "alignment": "left",
       "newline": true,
       "segments": [
         {
           "foreground": "lightGreen",
-          "foreground_templates": ["{{ if gt .Code 0}}lightRed{{ end }}"],
+          "foreground_templates": [
+            "{{ if gt .Code 0}}lightRed{{ end }}"
+          ],
           "properties": {
             "always_enabled": true
           },
