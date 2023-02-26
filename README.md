@@ -14,7 +14,9 @@
     ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/cmd.png)
 
 + 魔改后的终端：
-    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine.png)
+    ![One Dark风](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine.png)  
+    或者使用Ubuntu风格
+    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine_ubuntu.png)  
 
 ## 使用
 
