@@ -5,3 +5,6 @@ Copy-Item $HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 $HOME\Docu
 # WindowsTerminal原有配置备份
 Copy-Item $HOME\'AppData\Local\Microsoft\Windows Terminal\settings.json' $HOME\'AppData\Local\Microsoft\Windows Terminal\settings.json.backup' -Force
 Copy-Item $HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json $HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json.backup -Force
+
+# vim的配置
+Copy-Item $HOME\_vimrc $HOME\_vimrc.backup -Force
