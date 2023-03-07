@@ -53,7 +53,7 @@
                 "size": 10.0,
                 "weight": "semi-bold"
             },
-            "opacity": 95,
+            "opacity": 99,
             "padding": "5",
             "scrollbarState": "hidden"
         },
@@ -134,7 +134,8 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#1E2127",
+            // "background": "#1E2127",
+            "background": "#282c34",
             "black": "#000000",
             "blue": "#61AFEF",
             "brightBlack": "#5C6370",
@@ -151,7 +152,8 @@
             "green": "#98C379",
             "name": "One Dark",
             "purple": "#C678DD",
-            "red": "#E06C75",
+            // "red": "#E06C75",
+            "red": "#e5404e",
             "selectionBackground": "#FFFFFF",
             "white": "#ABB2BF",
             "yellow": "#D19A66"
