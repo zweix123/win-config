@@ -1,3 +1,5 @@
+>One Dark的wt配色对vim的配色有问题，还在配置
+
 + 该配置配套教程：[zweix的win机器开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md#5%E5%91%BD%E4%BB%A4%E8%A1%8C)
 + 提供的配置：
     1. oh-my-posh的主题：主打简约效率风魔改自官方主题`ys`
