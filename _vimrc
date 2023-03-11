@@ -75,7 +75,7 @@ set foldlevel=100
 " 开启状态栏信息
 set laststatus=2
 " 命令行的高度，默认为1，这里设为2
-set cmdheight=2
+" set cmdheight=2
 
 
 " 显示Tab符，使用一高亮竖线代替
@@ -240,3 +240,7 @@ set expandtab
 " 主要给Tlist使用
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Auto_Open = 1
+
+" 配色主题
+" syntax on
+colorscheme onedark

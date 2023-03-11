@@ -9,3 +9,12 @@ Copy-Item .\settings.json $HOME\AppData\Local\Packages\Microsoft.WindowsTerminal
 
 # vim的配置
 Copy-Item .\_vimrc $HOME\_vimrc -Force
+# 下载vim插件
+$vimplugpaht = $HOME + "\vimfiles\pack\vendor\start"
+
+# 创建目录
+if(!(Test-Path $vimplugpaht)){
+    New-Item -ItemType Directory -Path $vimplugpaht
+}
+
+git clone https://github.com/joshdick/onedark.vim.git $vimplugpaht/onedark.vim

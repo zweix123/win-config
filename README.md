@@ -1,27 +1,22 @@
->One Dark的wt配色对vim的配色有问题，还在配置
-
 + 该配置配套教程：[zweix的win机器开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md#5%E5%91%BD%E4%BB%A4%E8%A1%8C)
+
 + 提供的配置：
-    1. oh-my-posh的主题：主打简约效率风魔改自官方主题`ys`
-    2. PowerShell7的配置：主要是用来引入主题
-        >2023.02.27, 添加引入模块和设置热键, 具体的让ls的输出更好看, 功能更像oh-my-zsh
+    1. oh-my-posh的主题：主打简约效率风，魔改自官方主题`ys`
+    2. PowerShell7的配置：引入oh-my-posh和一个美化`ls`输出的模块
     3. Windows Terminal的配置：
-        + 打开位置、打开大小、打开模式、模式切换快捷键可按个人喜好修改
-        + 字体种类、字体大小、Ubuntu风配色方案（也有更好看的One Dark风，但是细节还在调教，没有使用）
+        + 打开位置、打开大小、打开模式、模式切换快捷键
+            >F4显示窗口栏（当然您可以改掉这个设置）
+        + 字体种类、字体大小、One Dark风配色方案
+          + 配色来[自](https://github.com/joshdick/onedark.vim)，One Dark风中的灰色过暗，我调教过，另外红色在vim中比较突兀，同样调教过。
         
-        >目前是F2显示窗口（不然不能移动）
+    4. win下vim的配置，主要指文件`~\_vimrc`和目录`.\vimfiles\`，内容包括设置、主题（One Dark）和插件
+        >这里的灰色没有调教过
+    
+    + 改键脚本：将`Caps`键改为方向键右键来加速使用oh-my-posh的补全
 
-    4. 改键脚本：将`Caps`键改为方向键右键来加速使用oh-my-posh的补全
-
-## 效果
-
-+ 原本的终端：  
-    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/cmd.png)
-
-+ 魔改后的终端：
-    ![One Dark风](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine_ubuntu.png)  
-    或者使用One Dark风格  
-    ![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine_onedark.png)  
++ 关于终端配色风格，如果喜欢One Dark下面提供其他主题：
+  + [官网提供](https://learn.microsoft.com/zh-cn/windows/terminal/custom-terminal-gallery/custom-schemes)：包括Ubuntu配色
+  + [catppuccin](https://github.com/catppuccin/catppuccin)：确实很好看，但是体感总觉得更“锐”
 
 ## 使用
 
@@ -43,3 +38,4 @@
     ```powershell
     .\collect.ps1
     ```
+    + 关于vim的插件本项目没有直接备份，而且在install脚本中使用下载的命令，所以collect脚本不能收集这部分
