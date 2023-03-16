@@ -8,3 +8,4 @@ Copy-Item $HOME\'AppData\Local\Microsoft\Windows Terminal\settings.json' ./ -For
 
 # vim的配置
 Copy-Item $HOME\_vimrc .\_vimrc -Force
+# 关于主题的配置不收集, 因为本来就是别人调教好的

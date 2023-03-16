@@ -74,11 +74,11 @@ set foldmethod=syntax
 set foldlevel=100
 " 开启状态栏信息
 set laststatus=2
-" 命令行的高度，默认为1，这里设为2
+" 命令行的高度, 默认为1, 这里设为2
 " set cmdheight=2
 
 
-" 显示Tab符，使用一高亮竖线代替
+" 显示Tab符, 使用一高亮竖线代替
 set list
 "set listchars=tab:\|\ ,
 set listchars=tab:>-,trail:-
@@ -98,7 +98,7 @@ filetype plugin indent on
 filetype on "打开文件类型检测
 "set fileencodings=euc-cn,ucs-bom,utf-8,cp936,gb2312,gb18030,gbk,big5,euc-jp,euc-kr,latin1
 set fileencodings=utf-8,gb2312,gbk,gb18030
-"这个用能很给劲，不管encoding是什么编码，都能将文本显示汉字
+"这个用能很给劲, 不管encoding是什么编码, 都能将文本显示汉字
 "set termencoding=gb2312
 set termencoding=utf-8
 "新建文件使用的编码

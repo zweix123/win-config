@@ -6,11 +6,11 @@
     3. Windows Terminal的配置：
         + 打开位置、打开大小、打开模式、模式切换快捷键
             >F4显示窗口栏（当然您可以改掉这个设置）
-        + 字体种类、字体大小、One Dark风配色方案
-          + 配色来[自](https://github.com/joshdick/onedark.vim)，One Dark风中的灰色过暗，我调教过，另外红色在vim中比较突兀，同样调教过。
+        + 字体种类、字体大小、[One Dark](https://github.com/yosukes-dev/one-dark-windows-terminal)风配色方案
+            >其中foreground过暗（虽然确实符合One Dark）我调教了一下
         
     4. win下vim的配置，主要指文件`~\_vimrc`和目录`.\vimfiles\`，内容包括设置、主题（One Dark）和插件
-        >这里的灰色没有调教过
+        + 配色[One Dark](https://github.com/joshdick/onedark.vim)
     
     + 改键脚本：将`Caps`键改为方向键右键来加速使用oh-my-posh的补全
 

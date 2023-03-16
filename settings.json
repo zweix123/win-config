@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -20,8 +18,7 @@
             "keys": "f12"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -41,14 +38,11 @@
     "initialPosition": "1000,400",
     "initialRows": 22,
     "launchMode": "focus",
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "bellStyle": "none",
             "colorScheme": "One Dark",
-            "font": 
-            {
+            "font": {
                 "face": "MesloLGM NF",
                 "size": 10.0,
                 "weight": "semi-bold"
@@ -57,8 +51,7 @@
             "padding": "5",
             "scrollbarState": "hidden"
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -85,8 +78,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -134,8 +126,8 @@
             "yellow": "#C19C00"
         },
         {
-            // "background": "#1E2127",
             "background": "#282c34",
+            // "background": "#1E2127",  // mine
             "black": "#000000",
             "blue": "#61AFEF",
             "brightBlack": "#5C6370",
@@ -148,12 +140,13 @@
             "brightYellow": "#D19A66",
             "cursorColor": "#FFFFFF",
             "cyan": "#56B6C2",
-            "foreground": "#ABB2BF",
+            // "foreground": "#5C6370",
+            "foreground": "#ABB2BF", // mine
             "green": "#98C379",
             "name": "One Dark",
             "purple": "#C678DD",
-            // "red": "#E06C75",
-            "red": "#e5404e",
+            "red": "#E06C75",
+            // "red": "#e5404e",  // mine
             "selectionBackground": "#FFFFFF",
             "white": "#ABB2BF",
             "yellow": "#D19A66"

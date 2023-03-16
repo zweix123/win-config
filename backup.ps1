@@ -9,4 +9,4 @@ Copy-Item $HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\L
 
 # vim相关原有配置备份
 Copy-Item $HOME\_vimrc $HOME\_vimrc.backup -Force
-Copy-Item $HOME\vimfiles $HOME\vimfile.backup -Force
+Copy-Item $HOME\vimfiles $HOME\vimfiles.backup -Force
