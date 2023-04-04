@@ -2,7 +2,12 @@
 
 + 提供的配置：
     1. oh-my-posh的主题：主打简约效率风，魔改自官方主题`ys`
-    2. PowerShell7的配置：引入oh-my-posh和一个美化`ls`输出的模块
+    2. PowerShell7的配置：
+        + 引入oh-my-posh
+        + 一个美化`ls`命令输出的模块
+            >这个模块原生的配置不是很符合我的要求，我做了微调但是没有放在这个配置中
+
+        + PSReadLine模块的一些配置
     3. Windows Terminal的配置：
         + 打开位置、打开大小、打开模式、模式切换快捷键
             >F4显示窗口栏（当然您可以改掉这个设置）
@@ -14,9 +19,9 @@
     
     + 改键脚本：将`Caps`键改为方向键右键来加速使用oh-my-posh的补全
 
-+ 关于终端配色风格，如果喜欢One Dark下面提供其他主题：
++ 关于终端配色风格，如果不喜欢One Dark下面提供其他主题：
   + [官网提供](https://learn.microsoft.com/zh-cn/windows/terminal/custom-terminal-gallery/custom-schemes)：包括Ubuntu配色
-  + [catppuccin](https://github.com/catppuccin/catppuccin)：确实很好看，但是体感总觉得更“锐”
+  + [catppuccin](https://github.com/catppuccin/catppuccin)：确实很好看，但是体感总觉得更“锐”, 伤眼睛。
 
 ## 使用
 

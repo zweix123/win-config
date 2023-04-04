@@ -1,16 +1,16 @@
-# theme
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\zweix.omp.json" | Invoke-Expression
-# python venv
-$env:VIRTUAL_ENV_DISABLE_PROMPT=1
-# Modules
-Import-Module DirColors  # 还有一种模块: PSColor，其实效果比这个好，但是会改变格式，不能接受
+# oh-my-posh
 
-# PSReadLine效率极低, 功能也不如oh-my-posh
-# Import-Module PSReadLine
-# Set-PSReadLineOption -PredictionSource History  # 设置预测文本来源为历史记录
-# Set-PSReadLineOption -HistorySearchCursorMovesToEnd  # 每次回溯输入历史，光标定位于输入内容末尾
+## theme
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\zweix.omp.json" | Invoke-Expression
+
+## python venv
+$env:VIRTUAL_ENV_DISABLE_PROMPT=1
+
+##
+Import-Module PSColor  # ps命令`ls`的输出太丑了, 这个模块可以美化
+# 这个本身也有缺点, 我个人也调整了下, 但是没有写在这个配置里
+
+## PSReadLine(一个优秀的模块, oh-my-posh很多地方使用该模块, 下面是一些个性化的配置)
 # Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete  # 设置 Tab 为菜单补全和 Intellisense
-# Set-PSReadlineKeyHandler -Key "Ctrl+d" -Function ViExit  # 设置 Ctrl+d 为退出 PowerShell
-# Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo  # 设置 Ctrl+z 为撤销
-# Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward  # 设置向上键为后向搜索历史记录
-# Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward  # 设置向下键为前向搜索历史纪录
+Set-PSReadlineKeyHandler -Key "Ctrl+d" -Function ViExit     # 设置 Ctrl+d 为退出 PowerShell
+Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo       # 设置 Ctrl+z 为撤销
