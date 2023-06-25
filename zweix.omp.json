@@ -38,7 +38,8 @@
           "template": " <lightBlue>git:(</><lightRed>{{ .HEAD }}</>{{ if .Working.Changed }}<lightYellow>x</>{{ end }}<lightBlue>)</>",
           "type": "git",
           "properties": {
-            "fetch_status": true
+            "fetch_status": true,
+            "branch_icon": ""
           }
         },
         {
