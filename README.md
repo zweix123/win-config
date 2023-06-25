@@ -27,8 +27,8 @@
 
 0. 下载：
     ```bash
-    git clone https://github.com/zweix123/posh-config.git
-    cd posh-config
+    git clone https://github.com/zweix123/win-config.git
+    cd win-config
     ```
 + 备份：可能出现报错，不过没关系
     ```powershell
