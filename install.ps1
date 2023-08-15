@@ -10,15 +10,5 @@ Copy-Item .\settings.json 'D:\Scoop\apps\windows-terminal\current\settings\setti
 
 # vim的配置
 Copy-Item .\_vimrc $HOME\_vimrc -Force
-
-$vimcolors=$HOME+"\vimfiles\colors"
-$vimautoload=$HOME+"\vimfiles\autoload"
-if(!(Test-Path $vimcolors)){
-    New-Item -ItemType Directory -Path $vimcolors
-}
-if(!(Test-Path $vimautoload)){
-    New-Item -ItemType Directory -Path $vimautoload
-}
-
-Copy-Item .\colors-onedark.vim $vimcolors\onedark.vim -Force
-Copy-Item .\autoload-onedark.vim $vimautoload\onedark.vim -Force
+Remove-Item $HOME\vimfiles\ -Force
+git clone --recursive git@github.com:zweix123/.vim.git $HOME\vimfiles

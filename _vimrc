@@ -121,14 +121,6 @@ set incsearch
 
 " 着色模式
 "set t_Co=256
-"colorscheme wombat256mod
-"colorscheme gardener
-"colorscheme elflord
-"colorscheme desert
-"colorscheme evening
-"colorscheme darkblue
-"colorscheme torte
-"colorscheme default
 
 " 字体 && 字号
 set guifont=Monaco:h10
@@ -241,6 +233,5 @@ set expandtab
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Auto_Open = 1
 
-" 配色主题
-" syntax on
-colorscheme onedark
+" colorscheme gruvbox
+" set background=dark

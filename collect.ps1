@@ -9,4 +9,3 @@ Copy-Item 'D:\Scoop\apps\windows-terminal\current\settings\settings.json' ./ -Fo
 
 # vim的配置
 Copy-Item $HOME\_vimrc .\_vimrc -Force
-# 关于主题的配置不收集, 因为本来就是别人调教好的
