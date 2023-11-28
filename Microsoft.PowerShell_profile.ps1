@@ -4,7 +4,7 @@
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\zweix.omp.json" | Invoke-Expression
 
 ## python venv
-$env:VIRTUAL_ENV_DISABLE_PROMPT=1
+$env:VIRTUAL_ENV_DISABLE_PROMPT = 1
 
 ##
 Import-Module PSColor  # ps命令`ls`的输出太丑了, 这个模块可以美化
@@ -14,3 +14,22 @@ Import-Module PSColor  # ps命令`ls`的输出太丑了, 这个模块可以美�
 # Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete  # 设置 Tab 为菜单补全和 Intellisense
 Set-PSReadlineKeyHandler -Key "Ctrl+d" -Function ViExit     # 设置 Ctrl+d 为退出 PowerShell
 Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo       # 设置 Ctrl+z 为撤销
+
+# alias
+function hcat {
+    bat --paging=never -n $args
+}
+function rg {
+    $arguments = "--hidden", "--no-follow", "--no-heading", "--column", "-F", $args
+    # $arguments = "--hidden", "--no-follow", "--max-columns", "255", "--no-heading", "--column", "-F", $args
+    & rg.exe $arguments  # 避免递归
+}
+function cpp20 {
+    [CmdletBinding(PositionalBinding = $true)]
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$file
+    )
+    g++ -std=c++2a $file && .\a.exe && Remove-Item .\a.exe
+}
+

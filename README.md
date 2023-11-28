@@ -8,25 +8,27 @@
             >这个模块原生的配置不是很符合我的要求，我做了微调但是没有放在这个配置中
 
         + PSReadLine模块的一些配置
-    3. Windows Terminal的配置：
+    <!-- 3. Windows Terminal的配置：
         + 打开位置、打开大小、打开模式、模式切换快捷键
             >F4显示窗口栏（当然您可以改掉这个设置）
         + 字体种类、字体大小、[One Dark](https://github.com/yosukes-dev/one-dark-windows-terminal)风配色方案
             >其中foreground过暗（虽然确实符合One Dark）我调教了一下
-        
-    4. win下vim的配置，主要指文件`~\_vimrc`和目录`.\vimfiles\`，内容包括设置、主题（One Dark）和插件
+    -->
+    3. win下vim的配置，主要指文件`~\_vimrc`和目录`.\vimfiles\`
+    <!-- 内容包括设置、主题（One Dark）和插件
         + 目前效果其实还有点怪异，我使用的是[这个vim onedark](https://github.com/joshdick/onedark.vim)，但是显示效果不如该主题在VSCode中的效果；实际上，这个配色是以插件的形式，而其他以colorscheme命令的主题甚至不能再wt中生效。
+   + -->
 
-    + 改键脚本：将`Caps`键改为方向键右键来加速使用oh-my-posh的补全
+    + 改键脚本（`ChangeKey.reg`）：将`Caps`键改为方向键右键来加速使用oh-my-posh的补全，双击运行，需要重启机器。
 
 ## 使用
 
-0. 下载：
+0. 下载：（如果不会Git的话，Github也能直接下载代码压缩包，找一下）
     ```bash
     git clone https://github.com/zweix123/win-config.git
     cd win-config
     ```
-+ 备份：可能出现报错，不过没关系
++ 备份：（可能出现报错，不过没关系）
     ```powershell
     .\backup.ps1
     ```

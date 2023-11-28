@@ -77,12 +77,10 @@ set laststatus=2
 " 命令行的高度, 默认为1, 这里设为2
 " set cmdheight=2
 
-
 " 显示Tab符, 使用一高亮竖线代替
 set list
 "set listchars=tab:\|\ ,
 set listchars=tab:>-,trail:-
-
 
 "侦测文件类型
 filetype on
@@ -92,7 +90,6 @@ filetype plugin on
 filetype indent on
 " 启用自动补全
 filetype plugin indent on 
-
 
 "设置编码自动识别, 中文引号显示
 filetype on "打开文件类型检测
@@ -112,7 +109,6 @@ set encoding=utf-8
 "set encoding=gb2312
 "set ambiwidth=double
 set fileformat=unix
-
 
 "设置高亮搜索
 set hlsearch
@@ -139,8 +135,6 @@ set guifont=Monaco:h10
 ""map <c-e> <ESC>:AuthorInfoDetect<CR><ESC>Gi
 ""imap <c-e> <ESC>:AuthorInfoDetect<CR><ESC>Gi
 ""vmap <c-e> <ESC>:AuthorInfoDetect<CR><ESC>Gi
-
-
 
 " ======= 引号 && 括号自动匹配 ======= "
 "
@@ -223,7 +217,8 @@ endif " has("autocmd")
 
 " 增加鼠标行高亮
 set cursorline
-hi CursorLine  cterm=NONE   ctermbg=darkred ctermfg=white
+hi CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
+" hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white 
 
 " 设置tab是四个空格
 set ts=4
@@ -232,6 +227,3 @@ set expandtab
 " 主要给Tlist使用
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Auto_Open = 1
-
-" colorscheme gruvbox
-" set background=dark
